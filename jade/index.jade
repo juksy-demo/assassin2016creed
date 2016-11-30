@@ -1,0 +1,28 @@
+doctype html
+html(lang='zh-TW')
+  head
+    include ./base/head.jade
+  body
+    #fb-root
+    h1.hide 夏日穿搭特輯 - JUKSY 流行生活網
+    include ./nav/n_01.jade
+    include ./header/h_02.jade
+    include ./gallery/g_02.jade
+    include ./layout/l_04.jade
+    include ./article/a_01.jade
+    include ./footer/f_01.jade
+    include ./btnfixed/b_01.jade
+    // js
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js")
+    script(src="//embedsocial.com/js/iframe.js")
+    script(async, src="//www.youtube.com/iframe_api")
+    script(src="js/gallery/g_02/jquery-easyframe.min.js")
+    script(src="js/index.js")
+    // third party
+    script(type='text/javascript')
+      include ./js/foot.js
+    // third party end
+    // js end

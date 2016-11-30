@@ -1,0 +1,140 @@
+.layout_02 {
+	position: relative;
+    background-color: $grey;
+    .layoutWrap {
+        padding: 50px $m_gap 50px $m_gap;
+        @include screen(tb) {
+            padding: 100px $tb_gap 50px $tb_gap;
+        }
+        @include screen(pcSmall) {
+            max-width: $pc_max_width;
+            margin: 0 auto;
+        }
+        .title {
+            font-size: 30px;
+            color: $white;
+            margin-bottom: 20px;
+            line-height: 1.5em;
+        }
+        .subTitle {
+            margin-bottom: 20px;
+            color: rgba(0,0,0,0.5);
+            @include screen(pcSmall){
+                width: 49%;
+            }
+        }
+        ul.articleWrap {
+            overflow: hidden;
+            @include screen(pcSmall) {
+                width: $pc_max_width;
+            }
+            li {
+                @include list_style_none;
+                width: 47.5%;
+                float: left;
+                margin-right: 5%;
+                margin-bottom: 20px;
+                padding-top: 10px;
+                border-top: 1px solid $white;
+                &:nth-child(odd) {
+                    margin-right: 0;
+                    @include screen(pcSmall) {
+                        margin-right: 25px;
+                    }
+                }
+                @include screen(pcSmall) {
+                    width: 223.75px;
+                    margin-top: 58px;
+                    margin-right: 25px;
+                    margin-bottom: 25px;
+                    &:nth-child(4n+3) {
+                        margin-right: 0;
+                    }
+                }
+                .article {
+                    background-color: $white;
+                    a.img {
+                        @include a_img;
+                        @include square_linkWrap;
+                        &:after {
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 10px 10px 0 10px;
+                            border-color: $white transparent transparent transparent;
+                            position: absolute;
+                            right: 15px;
+                            top: 0;
+                        }
+                    }
+                    a.txt {
+                        display: block;
+                        height: $line-height*3;
+                        overflow: hidden;
+                        padding: 15px;
+                        @include screen(tb) {
+                            padding: $tb_gap;
+                        }
+                        @include screen(pcSmall) {
+                            padding: 18px;
+                        }
+                        letter-spacing: normal;
+                        h3 {
+                            font-weight: normal;
+                            @include a_txt;
+                        }
+                    }
+                }
+                &.big {
+                    width: 100%;
+                    margin-right: 0;
+                    @include screen(pcSmall) {
+                        width: 472.5px;
+                        margin-top: 0;
+                        margin-right: 25px;
+                    }
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 10px 10px 10px;
+                        border-color: transparent transparent $white transparent;
+                        position: absolute;
+                        right: 15px;
+                        bottom: 110px;
+                        @include screen(tb) {
+                            bottom: 159px;
+                        }
+                        @include screen(pcSmall) {
+                            bottom: 165px;
+                        }
+                    }
+                    .article {
+                        @include screen(pcSmall) {
+                            min-height: 415px;
+                        }
+                        a.img {
+                            @include a_img;
+                            @include fbsize_linkWrap;
+                            &:after {
+                                display: none;
+                            }
+                        }
+                        a.txt {
+                            font-size: 20px;
+                            line-height: 40px;
+                            height: 80px;
+                            @include screen(tb) {
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
