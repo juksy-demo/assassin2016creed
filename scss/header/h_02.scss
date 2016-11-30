@@ -248,7 +248,7 @@
                                 margin: $line-height 0;
                                 @include screen(pcSmall) {
                                     width: 655px;
-                                    max-height: $line-height*3;
+                                    height: $line-height*3;
                                     margin: 0;
                                     padding-bottom: 20px;
                                     float: right;

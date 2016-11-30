@@ -1761,7 +1761,7 @@ img {
 @media screen and (min-width: 1024px) {
   .header_02 .headerWrap .detail .detailWrap .txtInner .txtWrap .txtWidth .txt {
     width: 655px;
-    max-height: 5.4em;
+    height: 5.4em;
     margin: 0;
     padding-bottom: 20px;
     float: right;
