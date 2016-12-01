@@ -198,14 +198,15 @@ body{
     @include screen(pcSmall) {
         background-image: url('../img/g_02_bg_pc.png');
         background-repeat: no-repeat;
-        background-position: center -387px;
+        background-position: center -225px;
+        background-size: 1500px auto;
     }
     .layoutWrap {
         .title {
             color: $white;
             text-shadow: 0 0 6px #1678d3, 0 0 12px #1678d3, 0 0 24px #49bba7;
             @include screen(pcSmall) {
-                padding: 320px $m_gap 0 $m_gap;
+                padding: 420px $m_gap 0 $m_gap;
             }
             &:after {
                 background-color: $white;
