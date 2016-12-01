@@ -2933,13 +2933,16 @@ body {
 
 @media screen and (min-width: 1024px) {
   .header_02 .headerWrap .parallaxContent .title {
-    display: none;
-    background-position: center 60%;
+    background-position: center 90%;
   }
 }
 
 .header_02 .headerWrap .detail .detailWrap .txtBg {
   background-color: #0a1729;
+}
+
+.header_02 .headerWrap .detail .detailWrap .txtInner .txtWrap .txtWidth.fadeOut .txt .hightlight {
+  background-color: #94282c;
 }
 
 .header_02 .headerWrap .detail .detailWrap .txtInner a.link {
